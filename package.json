@@ -1,0 +1,12 @@
+{
+  "name": "nimbusops",
+  "version": "1.0.0",
+  "description": "NimbusOps - Real-time DevOps CI/CD project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

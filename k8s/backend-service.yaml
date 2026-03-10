@@ -1,13 +1,15 @@
-apiVersion
-n: v1
+apiVersion: v1
 kind: Service
 metadata:
-  name: flask-service
+  name: nimbusops-service
+  labels:
+    app: nimbusops
 spec:
   type: NodePort
   selector:
-    app: nimbus-backend
+    app: nimbusops
   ports:
-  - port: 80
-    targetPort: 5000
-    nodePort: 30007
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      nodePort: 30080
